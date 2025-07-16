@@ -28,5 +28,14 @@ summary.lm(bAGE)
 ```
 we want to compare the neck with age to the other model with neck.Ordering by adjusted R square in the model with neck we got 0.7476 and for the age model it was 0.5073. With this we found out that neck is better than age 
 
+
+```{r}
+bHEADLEN <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(bHEADLEN)
+summary.lm(bHEADLEN)
+```
+after comparing the neck model, the AGE, NECK, and the HEADLEN in order form biggest to smallest is HEADLEN -0.8434, NECK -0.7476, and AGE -0.5073 
+
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
