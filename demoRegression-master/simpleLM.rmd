@@ -53,5 +53,14 @@ summary.lm(bCHEST)
 ```
 after comparing the neck model, the AGE, HEADWTH, and the HEADLEN in order form biggest to smallest is HEADLEN -0.8434, NECK -0.7476, HEADWTH -0.5321, CHEST -0.7869 and AGE -0.5073 
 
+```{r}
+bWEIGHT <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(bWEIGHT)
+summary.lm(bWEIGHT)
+```
+
+
+
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
